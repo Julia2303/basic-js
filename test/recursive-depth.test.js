@@ -30,6 +30,7 @@ describe('Recursive depth', () => {
             }
         });
         it.optional('returns correct depth of nested arrays', () => {
+
             assert.equal(calculateDepth([1, 2, 3, 4, 5, [1]]), 2);
             assert.equal(calculateDepth([1, 2, 3, [1], 4, 5, [1]]), 2);
             assert.equal(calculateDepth([1, 2, 3, [8, [2]], 4, 5, []]), 3);
