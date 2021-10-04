@@ -36,7 +36,6 @@ export default {
   finishChain() {
     const result = this.chain.map(item => `( ${item} )`).join('~~');
     this.chain = [];
-    // console.log(`result: ${result}`)
     return result
   }
 };
